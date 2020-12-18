@@ -1,0 +1,101 @@
+:root{      /*declaração de variavel*/
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{      /*Reset de html*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body{
+    background: var(--preta);  /*chamando variavel de cor*/
+    font-family: 'Arial';
+    color: white;
+}
+
+header .container{
+    display:flex; /* Joga os itens para a linha*/
+    align-items:center; /* Alinha de maneira vertical*/
+    justify-content: space-between; /* Alinha de maneira horizontal*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none; /* Retira o trasejado abaixo para n parecer um link*/
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*Efeito de passar o mouse e alterar cor*/
+    color:#FFF;
+}
+
+/* Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("/img/Capa-The100.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color:white;
+    padding: 15px 30px;  /*Espaço interno do elemento */
+    margin-right:  15px;  /*Espaçamento entre os botões*/
+    font-size: 12px;
+    cursor: pointer; /*Altera o cursor quando passa em cima do botão*/
+    transition: .3s ease all; /*Efeito para transição*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px; /*Espaçamento da imagem*/
+}
+
+.container{
+    margin-left: 25px;
+}
+
+.filme-principal .container{
+    width: 80%; /*Limitador de texto*/
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrocel-filmes{
+    margin-top: 5px;
+}
